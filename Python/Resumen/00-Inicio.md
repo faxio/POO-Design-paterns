@@ -14,14 +14,22 @@ En el desarrollo de software, el diseño es un paso que se termina antes de prog
 
 ## Objetos y clases
 
-- Las clases son como maquetas, planos para crear objetos.Por ejemplo si tuvieramos una clase llamada **Orange**, podriamos crear tantos objetos como queramos así tendriamos Orange1, Orange2, Orange3, etc. pero todos ellos son creados gracias a la clase **Orange** o tambien conocido como **instancias de la clase**
+- Las clases son como maquetas, planos para crear objetos.Por ejemplo si tuvieramos una clase llamada **Orange**, podriamos crear tantos objetos como queramos así tendriamos Orange1, Orange2, Orange3, etc. pero todos ellos son creados gracias a la clase **Orange**, estos objetos creados tambien son conocidos como **instancias de la clase**
 - Para describir la relación entre los objetos del sistema existen los diagramas de clases (UML).  
   ![Relación entre clases](./img/00-class.png)  
   Diagrama de clases donde la clase Orange tiene una relación de asosiación con Basket, y Apple tiene una relación de asociación con Barrel
-- UML puede ser bastante opcional.
+- UML puede ser bastante opcional.  
   ![Relación entre clases](./img/01-class.png)  
   Se agrego la cardinalidad y una frase que describe la relación entre ellas que podría traducirse como `n orange se guardan en un basket`
 
 ## Especificando atributos y comportamientos
 
-- Hasta ahora sabemos que los objetos son instancias de las clases, y las clases pueden relacionarse entre sí, una instancia de clase es un objeto especifico que tiene su propio conjunto de información y comportamientos
+- Hasta ahora sabemos que los objetos son instancias de las clases, y las clases pueden relacionarse entre sí, una instancia de clase es un objeto especifico que tiene su propio conjunto de información y comportamientos.
+
+- El conjunto de información puede tener estados que varían entre diferentes instancias de clase. Por ejemplo una naranja tiene un peso diferente a otra naranja. Esto es conocido como los atributos, propiedades o miembros (instance variable in python).
+
+- En UML podemos especificar tanto como queramos
+  ![Relación entre clases](./img/02-class.png)  
+   `+` indica que es un atributo público  
+  `:type` indica el tipo de dato que tendrá el atributo
+  `atributos implicitos` Describen la relación que tienen los objetos en este caso `+ basket: Basket`
